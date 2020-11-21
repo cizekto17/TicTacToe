@@ -1,0 +1,9 @@
+async void OnNoteAddedClicked(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+            await Navigation.PushAsync(new NoteEntryPage
+            {
+                BindingContext = note
+
+            });
+        }
