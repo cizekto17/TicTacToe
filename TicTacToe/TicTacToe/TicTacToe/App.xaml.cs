@@ -10,7 +10,7 @@ namespace TicTacToe
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new NoGameNoLife());
         }
 
         protected override void OnStart()
