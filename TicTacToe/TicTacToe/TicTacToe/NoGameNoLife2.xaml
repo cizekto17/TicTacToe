@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TicTacToe"
+             x:Class="TicTacToe.NoGameNoLife2">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Pause"
+                     Order="Primary"
+                     Priority="0"
+                     Clicked="Pause"/>
+        <ToolbarItem Text="Surrender"
+                     Order="Secondary"
+                     Priority="0"
+                     Clicked="Surrender"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <Grid RowSpacing="0" ColumnSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="65" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="60" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="40" />
+            </Grid.ColumnDefinitions>
+            <Image Source = "{local:ImageResource TicTacToe.Images.user_icon.png}"
+                   Grid.Column="0" Grid.Row="0" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start"
+                   VerticalOptions="Start" Margin="0,12,0,0"/>
+            <Label Text="Opponent" Grid.Column="1" Grid.Row="0" FontSize="24" Grid.ColumnSpan="4" FontAttributes="Bold" Margin="0,20,0,0"/>
+            <Label Text="2:30" Grid.Column="5" Grid.Row="0" Grid.ColumnSpan="2"  FontSize="24" FontAttributes="Bold" Margin="0,20,0,0" />
+
+            <ImageButton Source="" Grid.Column="0" Grid.Row="1"/>
+            <ImageButton Source="{local:ImageResource TicTacToe.Images.o_player.png}" Grid.Column="1" Grid.Row="1"/>
+            <ImageButton Source="{local:ImageResource TicTacToe.Images.x_player2.png}" Grid.Column="2" Grid.Row="1"/>
+            <ImageButton Source="" Grid.Column="3" Grid.Row="1"/>
+            <ImageButton Source="" Grid.Column="4" Grid.Row="1"/>
+            <ImageButton Source="" Grid.Column="5" Grid.Row="1"/>
+            <ImageButton Source="{local:ImageResource TicTacToe.Images.o_player.png}" Grid.Column="6" Grid.Row="1"/>
+            <ImageButton Source="" Grid.Column="7" Grid.Row="1"/>
+            <ImageButton Source="" Grid.Column="8" Grid.Row="1"/>
+
+            <ImageButton Source="" Grid.Column="0" Grid.Row="2"/>
+            <ImageButton Source="" Grid.Column="1" Grid.Row="2"/>
+            <ImageButton Source="{local:ImageResource TicTacToe.Images.o_player.png}" Grid.Column="2" Grid.Row="2"/>
+            <ImageButton Source="" Grid.Column="3" Grid.Row="2"/>
+            <ImageButton Source="" Grid.Column="4" Grid.Row="2"/>
+            <ImageButton Source="{local:ImageResource TicTacToe.Images.x_player2.png}" Grid.Column="5" Grid.Row="2"/>
+            <ImageButton Source="" Grid.Column="6" Grid.Row="2"/>
+            <ImageButton Source="" Grid.Column="7" Grid.Row="2"/>
+            <ImageButton Source="" Grid.Column="8" Grid.Row="2"/>
+
+            <ImageButton Source="" Grid.Column="0" Grid.Row="3"/>
+            <ImageButton Source="" Grid.Column="1" Grid.Row="3"/>
+            <ImageButton Source="" Grid.Column="2" Grid.Row="3"/>
+            <ImageButton Source="" Grid.Column="3" Grid.Row="3"/>
+            <ImageButton Source="{local:ImageResource TicTacToe.Images.x_player2.png}" Grid.Column="4" Grid.Row="3"/>
+            <ImageButton Source="" Grid.Column="5" Grid.Row="3"/>
+            <ImageButton Source="" Grid.Column="6" Grid.Row="3"/>
+            <ImageButton Source="" Grid.Column="7" Grid.Row="3"/>
+            <ImageButton Source="" Grid.Column="8" Grid.Row="3"/>
+
+            <ImageButton Source="" Grid.Column="0" Grid.Row="4"/>
+            <ImageButton Source="{local:ImageResource TicTacToe.Images.o_player.png}" Grid.Column="1" Grid.Row="4"/>
+            <ImageButton Source="" Grid.Column="2" Grid.Row="4"/>
+            <ImageButton Source="{local:ImageResource TicTacToe.Images.x_player2.png}" Grid.Column="3" Grid.Row="4"/>
+            <ImageButton Source="" Grid.Column="4" Grid.Row="4"/>
+            <ImageButton Source="" Grid.Column="5" Grid.Row="4"/>
+            <ImageButton Source="" Grid.Column="6" Grid.Row="4"/>
+            <ImageButton Source="" Grid.Column="7" Grid.Row="4"/>
+            <ImageButton Source="" Grid.Column="8" Grid.Row="4"/>
+
+            <ImageButton Source="" Grid.Column="0" Grid.Row="5"/>
+            <ImageButton Source="{local:ImageResource TicTacToe.Images.o_player.png}" Grid.Column="1" Grid.Row="5"/>
+            <ImageButton Source="{local:ImageResource TicTacToe.Images.x_player2.png}" Grid.Column="2" Grid.Row="5"/>
+            <ImageButton Source="" Grid.Column="3" Grid.Row="5"/>
+            <ImageButton Source="" Grid.Column="4" Grid.Row="5"/>
+            <ImageButton Source="" Grid.Column="5" Grid.Row="5"/>
+            <ImageButton Source="" Grid.Column="6" Grid.Row="5"/>
+            <ImageButton Source="" Grid.Column="7" Grid.Row="5"/>
+            <ImageButton Source="" Grid.Column="8" Grid.Row="5"/>
+
+            <ImageButton Source="" Grid.Column="0" Grid.Row="6"/>
+            <ImageButton Source="{local:ImageResource TicTacToe.Images.o_player.png}" Grid.Column="1" Grid.Row="6"/>
+            <ImageButton Source="" Grid.Column="2" Grid.Row="6"/>
+            <ImageButton Source="" Grid.Column="3" Grid.Row="6"/>
+            <ImageButton Source="" Grid.Column="4" Grid.Row="6"/>
+            <ImageButton Source="" Grid.Column="5" Grid.Row="6"/>
+            <ImageButton Source="" Grid.Column="6" Grid.Row="6"/>
+            <ImageButton Source="" Grid.Column="7" Grid.Row="6"/>
+            <ImageButton Source="" Grid.Column="8" Grid.Row="6"/>
+
+            <ImageButton Source="" Grid.Column="0" Grid.Row="7"/>
+            <ImageButton Source="" Grid.Column="1" Grid.Row="7"/>
+            <ImageButton Source="" Grid.Column="2" Grid.Row="7"/>
+            <ImageButton Source="" Grid.Column="3" Grid.Row="7"/>
+            <ImageButton Source="" Grid.Column="4" Grid.Row="7"/>
+            <ImageButton Source="" Grid.Column="5" Grid.Row="7"/>
+            <ImageButton Source="" Grid.Column="6" Grid.Row="7"/>
+            <ImageButton Source="" Grid.Column="7" Grid.Row="7"/>
+            <ImageButton Source="" Grid.Column="8" Grid.Row="7"/>
+
+            <ImageButton Source="" Grid.Column="0" Grid.Row="8"/>
+            <ImageButton Source="" Grid.Column="1" Grid.Row="8"/>
+            <ImageButton Source="" Grid.Column="2" Grid.Row="8"/>
+            <ImageButton Source="" Grid.Column="3" Grid.Row="8"/>
+            <ImageButton Source="" Grid.Column="4" Grid.Row="8"/>
+            <ImageButton Source="" Grid.Column="5" Grid.Row="8"/>
+            <ImageButton Source="" Grid.Column="6" Grid.Row="8"/>
+            <ImageButton Source="" Grid.Column="7" Grid.Row="8"/>
+            <ImageButton Source="" Grid.Column="8" Grid.Row="8"/>
+
+            <ImageButton Source="" Grid.Column="0" Grid.Row="9"/>
+            <ImageButton Source="" Grid.Column="1" Grid.Row="9"/>
+            <ImageButton Source="" Grid.Column="2" Grid.Row="9"/>
+            <ImageButton Source="" Grid.Column="3" Grid.Row="9"/>
+            <ImageButton Source="" Grid.Column="4" Grid.Row="9"/>
+            <ImageButton Source="" Grid.Column="5" Grid.Row="9"/>
+            <ImageButton Source="" Grid.Column="6" Grid.Row="9"/>
+            <ImageButton Source="" Grid.Column="7" Grid.Row="9"/>
+            <ImageButton Source="" Grid.Column="8" Grid.Row="9"/>
+
+            <ImageButton Source="" Grid.Column="0" Grid.Row="10"/>
+            <ImageButton Source="" Grid.Column="1" Grid.Row="10"/>
+            <ImageButton Source="" Grid.Column="2" Grid.Row="10"/>
+            <ImageButton Source="" Grid.Column="3" Grid.Row="10"/>
+            <ImageButton Source="" Grid.Column="4" Grid.Row="10"/>
+            <ImageButton Source="" Grid.Column="5" Grid.Row="10"/>
+            <ImageButton Source="" Grid.Column="6" Grid.Row="10"/>
+            <ImageButton Source="" Grid.Column="7" Grid.Row="10"/>
+            <ImageButton Source="" Grid.Column="8" Grid.Row="10"/>
+
+            <Image Source = "{local:ImageResource TicTacToe.Images.user_icon.png}"
+                   Grid.Column="0" Grid.Row="11" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start"
+                   VerticalOptions="Start" Margin="10,2,0,0"/>
+            <Label Text="You" Grid.Column="1" Grid.Row="11" FontSize="24" Grid.ColumnSpan="4" FontAttributes="Bold" Margin="0,10,0,0"/>
+            <Label Text="2:30" Grid.Column="5" Grid.Row="11" Grid.ColumnSpan="2"  FontSize="24" FontAttributes="Bold" Margin="0,10,0,0" />
+            <Label Text="" Grid.Column="4" Grid.Row="5"   FontSize="24" FontAttributes="Bold" />
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

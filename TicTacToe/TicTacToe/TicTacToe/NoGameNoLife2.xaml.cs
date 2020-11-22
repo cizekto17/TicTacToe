@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace TicTacToe
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class NoGameNoLife : ContentPage
+    public partial class NoGameNoLife2 : ContentPage
     {
-        public NoGameNoLife()
+        public NoGameNoLife2()
         {
             InitializeComponent();
         }
@@ -22,10 +22,7 @@ namespace TicTacToe
         }
         async public void Pause(object sender, EventArgs args)
         {
-            await Navigation.PushAsync(new NoGameNoLife2 { });
+            await Navigation.PushAsync(new NoGameNoLife { });
         }
-
-
     }
-   
 }
