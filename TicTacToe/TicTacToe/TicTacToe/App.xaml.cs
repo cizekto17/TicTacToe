@@ -10,13 +10,13 @@ namespace TicTacToe
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new NickMenu());
+
         }
 
         protected override void OnStart()
         {
         }
-
         protected override void OnSleep()
         {
         }

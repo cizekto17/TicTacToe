@@ -16,5 +16,15 @@ namespace TicTacToe
         {
             InitializeComponent();
         }
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+            listView.ItemsSource = "Pepa";
+        }
+        async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+                await Navigation.PushAsync(new EndOfSuffering());
+        }
     }
 }

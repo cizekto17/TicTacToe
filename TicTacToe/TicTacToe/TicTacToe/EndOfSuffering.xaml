@@ -1,12 +1,38 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TicTacToe.EndOfSuffering">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="TicTacToe.EndOfSuffering"
+             xmlns:local="clr-namespace:TicTacToe">
+    <ContentPage.ToolbarItems>
+        
+    </ContentPage.ToolbarItems>
+    <RelativeLayout Margin="20">
+        <Image RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.40}"
+               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.05}"
+               RelativeLayout.WidthConstraint="80"
+                Source="{local:ImageResource TicTacToe.Images.o_player.png}"/>
+        <Label RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.43}"
+               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.17}"
+               Text="Him"  Grid.Row="1" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="30"/>
+        <Label RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.25}"
+               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.25}"
+               Text="Winner" Grid.Row="2" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="60"/>
+        <Image RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.40}"
+               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.50}"
+               RelativeLayout.WidthConstraint="80"
+               Source="{local:ImageResource TicTacToe.Images.x_player.png}"/>
+        <Label RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.43}"
+               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.62}"
+               Text="You" Grid.Row="5" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="30"/>
+        <Label RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.25}"
+               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.7}"
+               Text="LOSER!" Grid.Row="6" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="60"/>
+        <Grid
+            RelativeLayout.XConstraint="40"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.3}">
+            <Button Text="Rematch" BackgroundColor="Gray" Grid.Row ="7" Grid.Column="0" TextColor="White" BorderColor="DeepSkyBlue" BorderWidth="2" CornerRadius="10" Clicked="OnPush"/>
+            <Button Text="Menu" BackgroundColor="Gray" Grid.Row ="7" Grid.Column="2" TextColor="White" BorderColor="DeepSkyBlue" BorderWidth="2" CornerRadius="10" Clicked="OnPush"/>
+        </Grid>
+    </RelativeLayout>
+   
 </ContentPage>

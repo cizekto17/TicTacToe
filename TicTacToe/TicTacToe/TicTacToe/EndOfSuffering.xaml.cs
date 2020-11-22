@@ -16,5 +16,9 @@ namespace TicTacToe
         {
             InitializeComponent();
         }
+        async public void OnPush(object sender, EventArgs args)
+        {
+                await Navigation.PushAsync(new NickMenu());
+        }
     }
 }
