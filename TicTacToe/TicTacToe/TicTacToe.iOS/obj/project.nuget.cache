@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "dlvuU2A3w4R7HqFgMlPxIa7rG8ffdxL1sMPQOR8+OaAUvKyb25oRisALlBAizLh93IB+FoGC+hg4wJTXs7/dlw==",
+  "dgSpecHash": "fdnmbaKIv8PEqDizOvLmZ92ODgk2N9+ey7kSxzwbdnkHqbSjyY8xVRmhIfhN8xpg+KVO4UNm26pXxlyJUEk0ew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj",
+  "projectFilePath": "C:\\Users\\tobik\\source\\repos\\Piskvorky\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj",
   "expectedPackageFiles": [
-    "X:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "X:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],
   "logs": []
 }
