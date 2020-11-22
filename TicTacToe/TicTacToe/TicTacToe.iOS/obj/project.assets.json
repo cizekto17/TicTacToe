@@ -978,24 +978,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tobik\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\tomas\\.nuget\\packages\\": {},
+    "X:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tobik\\source\\repos\\Piskvorky\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj",
       "projectName": "TicTacToe.iOS",
-      "projectPath": "C:\\Users\\tobik\\source\\repos\\Piskvorky\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj",
-      "packagesPath": "C:\\Users\\tobik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tobik\\source\\repos\\Piskvorky\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\obj\\",
+      "projectPath": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj",
+      "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "X:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\tobik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1009,8 +1009,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\tobik\\source\\repos\\Piskvorky\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
-              "projectPath": "C:\\Users\\tobik\\source\\repos\\Piskvorky\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj"
+            "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
+              "projectPath": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj"
             }
           }
         }

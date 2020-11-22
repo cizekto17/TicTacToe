@@ -19,12 +19,14 @@
   <ItemGroup>
     <None Remove="Images\o_player.png" />
     <None Remove="Images\x_player.png" />
+    <None Remove="Images\x_player2.png" />
     <None Remove="user_icon.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Images\o_player.png" />
     <EmbeddedResource Include="Images\x_player.png" />
+    <EmbeddedResource Include="Images\x_player2.png" />
   </ItemGroup>
 
   <ItemGroup>

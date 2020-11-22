@@ -30,7 +30,7 @@
         <Grid
             RelativeLayout.XConstraint="40"
             RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.3}">
-            <Button Text="Rematch" BackgroundColor="Gray" Grid.Row ="7" Grid.Column="0" TextColor="White" BorderColor="DeepSkyBlue" BorderWidth="2" CornerRadius="10" Clicked="OnPush"/>
+            <Button Text="Rematch" BackgroundColor="Gray" Grid.Row ="7" Grid.Column="0" TextColor="White" BorderColor="DeepSkyBlue" BorderWidth="2" CornerRadius="10" Clicked="OnReset"/>
             <Button Text="Menu" BackgroundColor="Gray" Grid.Row ="7" Grid.Column="2" TextColor="White" BorderColor="DeepSkyBlue" BorderWidth="2" CornerRadius="10" Clicked="OnPush"/>
         </Grid>
     </RelativeLayout>

@@ -18,7 +18,11 @@ namespace TicTacToe
         }
         async public void OnPush(object sender, EventArgs args)
         {
-                await Navigation.PushAsync(new NickMenu());
+                await Navigation.PushAsync(new MainPage());
+        }
+        async public void OnReset(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new GameSettings(new Player("Dobby")));
         }
     }
 }

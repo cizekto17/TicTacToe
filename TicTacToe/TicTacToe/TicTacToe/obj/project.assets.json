@@ -628,25 +628,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tobik\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\tomas\\.nuget\\packages\\": {},
+    "X:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tobik\\source\\repos\\Piskvorky\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
+      "projectUniqueName": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
       "projectName": "TicTacToe",
-      "projectPath": "C:\\Users\\tobik\\source\\repos\\Piskvorky\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
-      "packagesPath": "C:\\Users\\tobik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tobik\\source\\repos\\Piskvorky\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\obj\\",
+      "projectPath": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
+      "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
+        "X:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\tobik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -696,7 +694,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\3.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
