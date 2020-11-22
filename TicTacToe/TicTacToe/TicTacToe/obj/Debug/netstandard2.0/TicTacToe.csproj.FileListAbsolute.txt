@@ -16,3 +16,4 @@ C:\Users\tomas\source\repos\TicTacToe\TicTacToe\TicTacToe\TicTacToe\TicTacToe\bi
 C:\Users\tomas\source\repos\TicTacToe\TicTacToe\TicTacToe\TicTacToe\TicTacToe\bin\Debug\netstandard2.0\ref\TicTacToe.dll
 C:\Users\tomas\source\repos\TicTacToe\TicTacToe\TicTacToe\TicTacToe\TicTacToe\bin\Debug\netstandard2.0\TicTacToe.pdb
 C:\Users\tomas\source\repos\TicTacToe\TicTacToe\TicTacToe\TicTacToe\TicTacToe\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\tomas\source\repos\TicTacToe\TicTacToe\TicTacToe\TicTacToe\TicTacToe\obj\Debug\netstandard2.0\NoGameNoLife2.xaml.g.cs

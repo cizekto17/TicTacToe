@@ -6,10 +6,12 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Pause"
                      Order="Primary"
-                     Priority="0"/>
+                     Priority="0"
+                     Clicked="Pause"/>
         <ToolbarItem Text="Surrender"
                      Order="Secondary"
-                     Priority="0"/>
+                     Priority="0"
+                     Clicked="Surrender"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <Grid RowSpacing="1" ColumnSpacing="1">
