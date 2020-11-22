@@ -4,7 +4,10 @@
              xmlns:local="clr-namespace:TicTacToe"
              x:Class="TicTacToe.NoGameNoLife" Title="ブルートゥース○×ゲーム">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Settings"
+        <ToolbarItem Text="Pause"
+                     Order="Primary"
+                     Priority="0"/>
+        <ToolbarItem Text="Surrender"
                      Order="Secondary"
                      Priority="0"/>
     </ContentPage.ToolbarItems>
