@@ -17,11 +17,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Images\o_player.png" />
     <None Remove="Images\user_icon.png" />
+    <None Remove="Images\x_player.png" />
+    <None Remove="Images\x_player2.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Images\o_player.png" />
     <EmbeddedResource Include="Images\user_icon.png" />
+    <EmbeddedResource Include="Images\x_player.png" />
+    <EmbeddedResource Include="Images\x_player2.png" />
   </ItemGroup>
 
   <ItemGroup>
