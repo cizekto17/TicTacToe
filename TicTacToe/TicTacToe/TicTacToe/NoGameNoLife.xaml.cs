@@ -16,5 +16,16 @@ namespace TicTacToe
         {
             InitializeComponent();
         }
+        async public void Surrender(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new EndOfSuffering { });
+        }
+        async public void Pause(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new NoGameNoLife2 { });
+        }
+
+
     }
+   
 }

@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\korona\\va\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj": {}
+    "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj": {}
   },
   "projects": {
-    "E:\\korona\\va\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj": {
+    "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\korona\\va\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj",
         "projectName": "TicTacToe.iOS",
-        "projectPath": "E:\\korona\\va\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj",
-        "packagesPath": "C:\\Users\\Honzik\\.nuget\\packages\\",
-        "outputPath": "E:\\korona\\va\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\obj\\",
+        "projectPath": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj",
+        "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "X:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Honzik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "E:\\korona\\va\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
-                "projectPath": "E:\\korona\\va\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj"
+              "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
+                "projectPath": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj"
               }
             }
           }
@@ -65,20 +65,20 @@
         }
       }
     },
-    "E:\\korona\\va\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
+    "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\korona\\va\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
+        "projectUniqueName": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
         "projectName": "TicTacToe",
-        "projectPath": "E:\\korona\\va\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
-        "packagesPath": "C:\\Users\\Honzik\\.nuget\\packages\\",
-        "outputPath": "E:\\korona\\va\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\obj\\",
+        "projectPath": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
+        "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "X:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Honzik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

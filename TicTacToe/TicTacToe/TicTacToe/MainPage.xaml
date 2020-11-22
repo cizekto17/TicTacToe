@@ -4,21 +4,8 @@
              x:Class="TicTacToe.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+        <Label Margin="0,60,0,0" FontSize="Title" Text="ブルートゥース○×ゲーム" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="EntryNick" MaxLength="20" FontAttributes="Bold" Margin="55,60,55,0" HorizontalTextAlignment="Center" Placeholder="Enter Nick"></Entry>
+        <Button Clicked="EnterQue" FontAttributes="Bold" Text="Enter Game" TextColor="White" Margin="0,40,0,0" HeightRequest="60" WidthRequest="190" HorizontalOptions="Center" BackgroundColor="DeepSkyBlue"></Button>
     </StackLayout>
-
 </ContentPage>

@@ -12,9 +12,18 @@ namespace TicTacToe
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GameSettings : ContentPage
     {
-        public GameSettings()
+        Player PlayerId;
+        public GameSettings(Player TmpPlayer)
         {
             InitializeComponent();
+            PlayerId = TmpPlayer;
+
+            PlayerNick.Text = PlayerId.Nick;
+            System.Diagnostics.Debug.WriteLine(PlayerNick.WidthRequest);
+        }
+        async public void SetReady(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new NoGameNoLife());
         }
     }
 }

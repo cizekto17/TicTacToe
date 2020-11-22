@@ -24,7 +24,7 @@ namespace TicTacToe
         }
         async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-                await Navigation.PushAsync(new EndOfSuffering());
+                await Navigation.PushAsync(new GameSettings(new Player("DrkPandaCZ")));
         }
     }
 }
