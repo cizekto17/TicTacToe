@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hgHHo/+mKorqgtZJ+nmbAkAcfxmLFwhtSPuwIzJwInFzL08l7Ly+kD3k4mbIoLNK4xkC7c0qAmNpgWPPjaM7SQ==",
+  "dgSpecHash": "nSeyj2FoTP/s2uc9JxE8eP0/yXTVQXtKfAZqu/t2x2/K5I2gTsUnJN2Y7Vwqw73fBgJoH0iph5NHVsA7Jm0lAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
+  "projectFilePath": "C:\\Users\\tomas\\VisualStudioProjects\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tomas\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\tomas\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

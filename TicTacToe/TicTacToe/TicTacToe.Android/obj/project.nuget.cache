@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8Y1hgyypEvcBTQtWAG86LL+oNyTFTgxNTtxxaNhBB1h0IRDEBn3DwUqm0SywZU6uvhUmIZMlDPD43Uu+nXtL+g==",
+  "dgSpecHash": "oXLqutn0Ymc4b9w0gaGqQZEPt04iqoX8vDIumS5hmthyl1Zsq6pNcerVx9BAT3VOCjdbrP5qFlgpFTRTAanDNA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.Android\\TicTacToe.Android.csproj",
+  "projectFilePath": "C:\\Users\\tomas\\VisualStudioProjects\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.Android\\TicTacToe.Android.csproj",
   "expectedPackageFiles": [
     "X:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "X:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",
