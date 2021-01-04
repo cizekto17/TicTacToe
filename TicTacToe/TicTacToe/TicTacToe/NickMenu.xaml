@@ -8,7 +8,7 @@
     <ListView x:Name="listView" Margin="30" ItemSelected="OnListViewItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <TextCell Text="XD" TextColor="Black" Height="30" />
+                <TextCell Text="{Binding Name}" TextColor="Black" Height="30" />
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>

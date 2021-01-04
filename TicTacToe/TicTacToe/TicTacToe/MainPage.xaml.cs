@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using TicTacToe.Models;
 using System.Diagnostics;
 
 namespace TicTacToe
@@ -33,6 +34,9 @@ namespace TicTacToe
             }
             else
             {
+                Data note = new Data();
+                note.Name = EntryNick.Text;
+                await App.Database.SaveNoteAsync(note);
                 await Navigation.PushAsync(new NickMenu());
             }
         }

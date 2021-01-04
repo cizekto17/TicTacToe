@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TicTacToe.Models;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -20,7 +21,7 @@ namespace TicTacToe
         {
             base.OnAppearing();
 
-            listView.ItemsSource = "Pepa";
+            listView.ItemsSource = await App.Database.GetNotesAsync();
         }
         async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
