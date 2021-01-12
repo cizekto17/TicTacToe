@@ -13,12 +13,35 @@ namespace TicTacToe
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class NoGameNoLife : ContentPage
     {
-        public NoGameNoLife()
-        {
-            InitializeComponent();
-        }
+        public System.Timers.Timer CountDown_P1;
+        public System.Timers.Timer CountDown_P2;
+        public int CountSeconds_P1;
+        public int CountSeconds_P2;
+
         public bool Player1 = true;
         public bool Player2 = false;
+
+        public bool GameTime = true;
+        public NoGameNoLife()
+        {
+            CountDown_P1 = new System.Timers.Timer();
+            CountDown_P1.Interval = 1000;
+            CountDown_P1.Elapsed += OnTimedEvent;
+
+            CountDown_P2 = new System.Timers.Timer();
+            CountDown_P2.Interval = 1000;
+            CountDown_P2.Elapsed += OnTimedEvent;
+
+            CountSeconds_P1 = 120;
+            CountSeconds_P2 = 120;
+
+            CountDown_P1.Start();
+            InitializeComponent();
+            
+           
+
+        }
+               
         public void Button_Clicked(object sender, EventArgs args)
         {
             ImageButton btn = (ImageButton)sender;
@@ -43,9 +66,35 @@ namespace TicTacToe
                 Player1 = true;
                 Player2 = false;
             }
-            
-
         }
+        public void OnTimedEvent(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            if (Player1)
+            {
+                CountDown_P2.Stop();
+                CountDown_P1.Start();
+                CountSeconds_P1--;
+                Console.WriteLine(CountSeconds_P1);
+                Console.WriteLine(CountSeconds_P2);
+                Label_Timer1.Text = CountSeconds_P1.ToString();
+            }
+            if (Player2)
+            {
+                CountDown_P1.Stop();
+                CountDown_P2.Start();
+                CountSeconds_P2--;
+                Console.WriteLine(CountSeconds_P2);
+                Console.WriteLine(CountSeconds_P1);
+                Label_Timer2.Text = CountSeconds_P2.ToString();
+            }
+            if (CountSeconds_P1 == 0 || CountSeconds_P2 == 0)
+            {
+                CountDown_P2.Stop();
+                CountDown_P2.Stop();
+                GameTime = false;
+            }
+        }
+
         async public void Surrender(object sender, EventArgs args)
         {
             await Navigation.PushAsync(new EndOfSuffering { });
