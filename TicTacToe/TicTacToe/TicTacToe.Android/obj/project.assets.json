@@ -1936,11 +1936,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.Android\\TicTacToe.Android.csproj",
+      "projectUniqueName": "C:\\Users\\tomas\\VisualStudioProjects\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.Android\\TicTacToe.Android.csproj",
       "projectName": "TicTacToe.Android",
-      "projectPath": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.Android\\TicTacToe.Android.csproj",
+      "projectPath": "C:\\Users\\tomas\\VisualStudioProjects\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.Android\\TicTacToe.Android.csproj",
       "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.Android\\obj\\",
+      "outputPath": "C:\\Users\\tomas\\VisualStudioProjects\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1961,8 +1961,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
-              "projectPath": "C:\\Users\\tomas\\source\\repos\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj"
+            "C:\\Users\\tomas\\VisualStudioProjects\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
+              "projectPath": "C:\\Users\\tomas\\VisualStudioProjects\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj"
             }
           }
         }
