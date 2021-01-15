@@ -19,13 +19,20 @@ namespace TicTacToe
         public string CountSeconds_P2_String { get; set; }
         private int _P1;
         private int _P2;
+        private int seconds1;
+        private int minutes1;
+        private int seconds2;
+        private int minutes2;
         public int CountSeconds_P1
         {
             get { return this._P1; }
             set
             {
                 this._P1 = value;
-                this.CountSeconds_P1_String = value.ToString();
+                this.seconds1 = _P1 % 60;
+                this.minutes1 = _P1 / 60 % 60;
+
+                this.CountSeconds_P1_String = minutes1 + ":" + seconds1;                
                 OnPropertyChanged("CountSeconds_P1_String");
             }
 
@@ -36,7 +43,10 @@ namespace TicTacToe
             set
             {
                 this._P2 = value;
-                this.CountSeconds_P2_String = value.ToString();
+                this.seconds2 = _P2 % 60;
+                this.minutes2 = _P2 / 60 % 60;
+
+                this.CountSeconds_P2_String = minutes2 + ":" + seconds2;
                 OnPropertyChanged("CountSeconds_P2_String");
 
             }
