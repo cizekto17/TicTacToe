@@ -15,8 +15,36 @@ namespace TicTacToe
     {
         public System.Timers.Timer CountDown_P1;
         public System.Timers.Timer CountDown_P2;
-        public int CountSeconds_P1;
-        public int CountSeconds_P2;
+        public string CountSeconds_P1_String { get; set; }
+        public string CountSeconds_P2_String { get; set; }
+        private int _P1;
+        private int _P2;
+        public int CountSeconds_P1
+        {
+            get { return this._P1; }
+            set
+            {
+                this._P1 = value;
+                this.CountSeconds_P1_String = value.ToString();
+                OnPropertyChanged("CountSeconds_P1_String");
+            }
+
+        }
+        public int CountSeconds_P2
+        {
+            get { return this._P2; }
+            set
+            {
+                this._P2 = value;
+                this.CountSeconds_P2_String = value.ToString();
+                OnPropertyChanged("CountSeconds_P2_String");
+
+            }
+
+        }
+       
+
+        
 
         public bool Player1 = true;
         public bool Player2 = false;
@@ -28,9 +56,12 @@ namespace TicTacToe
         public int Sloupce = 3;
         public int Rada;
         public int Sloupec;
+
+        
         public NoGameNoLife()
         {
             Board();
+            BindingContext = this;
             CountDown_P1 = new System.Timers.Timer();
             CountDown_P1.Interval = 1000;
             CountDown_P1.Elapsed += OnTimedEvent;
@@ -83,6 +114,8 @@ namespace TicTacToe
             {
                 btn.Source = ImageSource.FromResource("TicTacToe.Images.o_player.png");
                 Console.WriteLine(btn.Source);
+                Rada = Grid.GetRow(btn);
+                Sloupec = Grid.GetColumn(btn);
                 Console.WriteLine("Rada" + Rada);
                 Console.WriteLine("Sloupec" + Sloupec);
                 if (Pole[Rada - 1, Sloupec - 1] == "X" || Pole[Rada - 1, Sloupec - 1] == "O")
@@ -119,18 +152,20 @@ namespace TicTacToe
                 CountDown_P2.Stop();
                 CountDown_P1.Start();
                 CountSeconds_P1--;
+                System.Diagnostics.Debug.WriteLine(CountSeconds_P1_String);
                 //Console.WriteLine(CountSeconds_P1);
                 //Console.WriteLine(CountSeconds_P2);
-                Label_Timer1.Text = CountSeconds_P1.ToString();
+                // Label_Timer1.Text = CountSeconds_P1.ToString();
             }
             if (Player2)
             {
                 CountDown_P1.Stop();
                 CountDown_P2.Start();
                 CountSeconds_P2--;
+                System.Diagnostics.Debug.WriteLine(CountSeconds_P2_String);
                 //Console.WriteLine(CountSeconds_P1);
                 //Console.WriteLine(CountSeconds_P2);
-                Label_Timer2.Text = CountSeconds_P2.ToString();
+                //Label_Timer2.Text = CountSeconds_P2.ToString();
             }
             if (CountSeconds_P1 == 0 || CountSeconds_P2 == 0)
             {
