@@ -23,6 +23,7 @@ namespace TicTacToe
         private int minutes1;
         private int seconds2;
         private int minutes2;
+        public int tahy = 90;
         public int CountSeconds_P1
         {
             get { return this._P1; }
@@ -107,6 +108,7 @@ namespace TicTacToe
                 }
                 tmpLP = "X";
                 btn.IsEnabled = false;
+                tahy--;
                 Player1 = false;
                 Player2 = true;
             }
@@ -128,6 +130,7 @@ namespace TicTacToe
                 }
                 tmpLP = "O";
                 btn.IsEnabled = false;
+                tahy--;
                 Player1 = true;
                 Player2 = false;
             }
@@ -188,6 +191,14 @@ namespace TicTacToe
                     Game();
                 });
             }
+            else if (tahy == 0)
+            {
+                tahy--;
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    Draw();
+                });
+            }
         }
         async public void Game()
         {
@@ -199,6 +210,11 @@ namespace TicTacToe
             {
                 GE.lastPlayed = "O";
             }
+            await Navigation.PushAsync(new EndOfSuffering(GE.lastPlayed) { });
+        }
+        async public void Draw()
+        {
+            GE.lastPlayed = "D";
             await Navigation.PushAsync(new EndOfSuffering(GE.lastPlayed) { });
         }
         async public void Surrender(object sender, EventArgs args)
