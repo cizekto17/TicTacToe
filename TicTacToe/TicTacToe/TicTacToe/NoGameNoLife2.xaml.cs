@@ -35,7 +35,6 @@ namespace TicTacToe
                 this.CountSeconds_P1_String = minutes1 + ":" + seconds1;
                 OnPropertyChanged("CountSeconds_P1_String");
             }
-
         }
         public int CountSeconds_P2
         {
@@ -48,18 +47,13 @@ namespace TicTacToe
 
                 this.CountSeconds_P2_String = minutes2 + ":" + seconds2;
                 OnPropertyChanged("CountSeconds_P2_String");
-
             }
-
         }
-
-
-
-
         public bool Player1 = true;
         public bool Player2 = false;
 
-        public bool GameTime = true;
+        public bool GameTime1 = true;
+        public bool GameTime2 = true;
 
         public static string[,] Pole;
         public int Rady = 10;
@@ -69,38 +63,32 @@ namespace TicTacToe
 
         GameEnder GE = new GameEnder(Pole, 5, 10, 9);
         string tmpLP;
-
-
-        public NoGameNoLife2()
+        public NoGameNoLife2(bool tmpTimer)
         {
             Board();
-            BindingContext = this;
-            CountDown_P1 = new System.Timers.Timer();
-            CountDown_P1.Interval = 1000;
-            CountDown_P1.Elapsed += OnTimedEvent;
+            if (tmpTimer)
+            {
+                CountDown_P1 = new System.Timers.Timer();
+                CountDown_P1.Interval = 1000;
+                CountDown_P1.Elapsed += OnTimedEvent;
 
-            CountDown_P2 = new System.Timers.Timer();
-            CountDown_P2.Interval = 1000;
-            CountDown_P2.Elapsed += OnTimedEvent;
+                CountDown_P2 = new System.Timers.Timer();
+                CountDown_P2.Interval = 1000;
+                CountDown_P2.Elapsed += OnTimedEvent;
 
-            CountSeconds_P1 = 120;
-            CountSeconds_P2 = 120;
-
-
+                CountSeconds_P1 = 180;
+                CountSeconds_P2 = 180;
+                CountDown_P1.Start();
+            }
+            BindingContext = this;           
 
             InitializeComponent();
-            CountDown_P1.Start();
-
-
         }
-
         public void Button_Clicked(object sender, EventArgs args)
         {
             ImageButton btn = (ImageButton)sender;
-
             //btn.Source = ImageSource.FromFile("Images/x_player2.png");
             //btn.Source = ImageSource.FromFile("{local:ImageResource TicTacToe.Images.o_player.png}");
-
             if (Player1)
             {
                 btn.Source = ImageSource.FromResource("TicTacToe.Images.x_player2.png");
@@ -117,7 +105,6 @@ namespace TicTacToe
                 {
                     Pole[Rada - 1, Sloupec] = "X";
                 }
-
                 tmpLP = "X";
                 btn.IsEnabled = false;
                 Player1 = false;
@@ -138,7 +125,6 @@ namespace TicTacToe
                 else
                 {
                     Pole[Rada - 1, Sloupec] = "O";
-
                 }
                 tmpLP = "O";
                 btn.IsEnabled = false;
@@ -159,10 +145,8 @@ namespace TicTacToe
                 for (int y = 0; y < Sloupce; y++)
                 {
                     Pole[x, y] = "P";
-
                 }
             }
-
         }
         public void OnTimedEvent(object sender, System.Timers.ElapsedEventArgs e)
         {
@@ -186,24 +170,42 @@ namespace TicTacToe
                 //Console.WriteLine(CountSeconds_P2);
                 //Label_Timer2.Text = CountSeconds_P2.ToString();
             }
-            if (CountSeconds_P1 == 0 || CountSeconds_P2 == 0)
+            if (CountSeconds_P1 == 0)
+            {
+                CountDown_P1.Stop();
+                GameTime1 = false;
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    Game();
+                });
+            }
+            else if (CountSeconds_P2 == 0)
             {
                 CountDown_P2.Stop();
-                CountDown_P2.Stop();
-                GameTime = false;
+                GameTime2 = false;
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    Game();
+                });
             }
-
         }
-
-
+        async public void Game()
+        {
+            if (GameTime1)
+            {
+                GE.lastPlayed = "X";
+            }
+            else if (GameTime2)
+            {
+                GE.lastPlayed = "O";
+            }
+            await Navigation.PushAsync(new EndOfSuffering(GE.lastPlayed) { });
+        }
         async public void Surrender(object sender, EventArgs args)
         {
             GE.lastPlayed = "D";
             await Navigation.PushAsync(new EndOfSuffering(GE.lastPlayed) { });
         }
-        async public void Pause(object sender, EventArgs args)
-        {
-            await Navigation.PushAsync(new NoGameNoLife2 { });
-        }
+        
     }
 }

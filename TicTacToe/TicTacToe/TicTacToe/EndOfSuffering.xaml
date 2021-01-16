@@ -22,7 +22,7 @@
                Text="LOSER!" Grid.Row="6" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="60"/>
         <Grid
             RelativeLayout.XConstraint="20"
-            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.25}">
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.15}">
             <Button Text="Rematch" BackgroundColor="Gray" Grid.Row ="7" Grid.Column="0" TextColor="White" BorderColor="DeepSkyBlue" BorderWidth="2" CornerRadius="10" Clicked="OnReset"/>
             <Button Text="Menu" BackgroundColor="Gray" Grid.Row ="7" Grid.Column="2" TextColor="White" BorderColor="DeepSkyBlue" BorderWidth="2" CornerRadius="10" Clicked="OnPush"/>
         </Grid>

@@ -36,6 +36,7 @@
                     Scale="1.5"
                     ThumbColor="DeepSkyBlue"
                     OnColor="#AEEAFF"
+                    x:Name="Timer_Switch"
                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.44}"
                    RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=245}">
             </Switch>
