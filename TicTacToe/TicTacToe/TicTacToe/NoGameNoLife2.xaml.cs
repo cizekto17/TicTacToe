@@ -77,8 +77,8 @@ namespace TicTacToe
                 CountDown_P2.Interval = 1000;
                 CountDown_P2.Elapsed += OnTimedEvent;
 
-                CountSeconds_P1 = 180;
-                CountSeconds_P2 = 180;
+                CountSeconds_P1 = 120;
+                CountSeconds_P2 = 120;
                 CountDown_P1.Start();
             }
             BindingContext = this;           
@@ -137,6 +137,8 @@ namespace TicTacToe
             GE.gameField = Pole;
             if (GE.CheckGameEnd(tmpLP))
             {
+                CountDown_P1.Stop();
+                CountDown_P2.Stop();
                 Navigation.PushAsync(new EndOfSuffering(GE.lastPlayed) { });
             }
         }

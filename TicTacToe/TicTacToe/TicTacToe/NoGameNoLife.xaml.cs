@@ -78,8 +78,8 @@ namespace TicTacToe
                 CountDown_P2.Interval = 1000;
                 CountDown_P2.Elapsed += OnTimedEvent;
 
-                CountSeconds_P1 = 180;
-                CountSeconds_P2 = 180;
+                CountSeconds_P1 = 8;
+                CountSeconds_P2 = 7;
                 CountDown_P1.Start();
             }
             BindingContext = this;
@@ -137,6 +137,8 @@ namespace TicTacToe
             GE.gameField = Pole;
             if (GE.CheckGameEnd(tmpLP))
             {
+                CountDown_P1.Stop();
+                CountDown_P2.Stop();
                 Navigation.PushAsync(new EndOfSuffering(GE.lastPlayed) { });
             }
         }
@@ -159,8 +161,8 @@ namespace TicTacToe
                 CountDown_P1.Start();
                 CountSeconds_P1--;
                 //System.Diagnostics.Debug.WriteLine(CountSeconds_P1_String);
-                //Console.WriteLine(CountSeconds_P1);
-                //Console.WriteLine(CountSeconds_P2);
+                Console.WriteLine(CountSeconds_P1);
+                Console.WriteLine(CountSeconds_P2);
                 // Label_Timer1.Text = CountSeconds_P1.ToString();
             }
             if (Player2)
@@ -169,21 +171,24 @@ namespace TicTacToe
                 CountDown_P2.Start();
                 CountSeconds_P2--;
                 //System.Diagnostics.Debug.WriteLine(CountSeconds_P2_String);
-                //Console.WriteLine(CountSeconds_P1);
-                //Console.WriteLine(CountSeconds_P2);
+                Console.WriteLine(CountSeconds_P1);
+                Console.WriteLine(CountSeconds_P2);
                 //Label_Timer2.Text = CountSeconds_P2.ToString();
             }
             if (CountSeconds_P1 == 0)
             {
                 CountDown_P1.Stop();
+                CountDown_P2.Stop();
                 GameTime1 = false;
+                
                 Device.BeginInvokeOnMainThread(() =>
                 {
                     Game();
                 });
             }
             else if (CountSeconds_P2 == 0)
-            {
+            {   
+                CountDown_P1.Stop();
                 CountDown_P2.Stop();
                 GameTime2 = false;
                 Device.BeginInvokeOnMainThread(() =>
@@ -194,6 +199,7 @@ namespace TicTacToe
             else if (tahy == 0)
             {
                 tahy--;
+
                 Device.BeginInvokeOnMainThread(() =>
                 {
                     Draw();
@@ -208,13 +214,16 @@ namespace TicTacToe
             }
             else if (GameTime2)
             {
+                
                 GE.lastPlayed = "O";
-            }            
+            }
+            
             await Navigation.PushAsync(new EndOfSuffering(GE.lastPlayed) { });
         }
         async public void Draw()
         {
             GE.lastPlayed = "D";
+            
             await Navigation.PushAsync(new EndOfSuffering(GE.lastPlayed) { });
         }
         async public void Surrender(object sender, EventArgs args)
