@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tomas\\VisualStudioProjects\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj": {}
+    "C:\\Users\\tobik\\source\\repos\\Piskvorky\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tomas\\VisualStudioProjects\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj": {
+    "C:\\Users\\tobik\\source\\repos\\Piskvorky\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomas\\VisualStudioProjects\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\tobik\\source\\repos\\Piskvorky\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj",
         "projectName": "TicTacToe.iOS",
-        "projectPath": "C:\\Users\\tomas\\VisualStudioProjects\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj",
-        "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomas\\VisualStudioProjects\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\obj\\",
+        "projectPath": "C:\\Users\\tobik\\source\\repos\\Piskvorky\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\TicTacToe.iOS.csproj",
+        "packagesPath": "C:\\Users\\tobik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tobik\\source\\repos\\Piskvorky\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "X:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\tomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tobik\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\tomas\\VisualStudioProjects\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
-                "projectPath": "C:\\Users\\tomas\\VisualStudioProjects\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj"
+              "C:\\Users\\tobik\\source\\repos\\Piskvorky\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
+                "projectPath": "C:\\Users\\tobik\\source\\repos\\Piskvorky\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj"
               }
             }
           }
@@ -65,20 +65,21 @@
         }
       }
     },
-    "C:\\Users\\tomas\\VisualStudioProjects\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
+    "C:\\Users\\tobik\\source\\repos\\Piskvorky\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomas\\VisualStudioProjects\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
+        "projectUniqueName": "C:\\Users\\tobik\\source\\repos\\Piskvorky\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
         "projectName": "TicTacToe",
-        "projectPath": "C:\\Users\\tomas\\VisualStudioProjects\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
-        "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomas\\VisualStudioProjects\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\obj\\",
+        "projectPath": "C:\\Users\\tobik\\source\\repos\\Piskvorky\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
+        "packagesPath": "C:\\Users\\tobik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tobik\\source\\repos\\Piskvorky\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "X:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\tomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tobik\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -130,7 +131,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\3.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -67,6 +67,9 @@ namespace TicTacToe
         public int Rada;
         public int Sloupec;
 
+        GameEnder GE = new GameEnder(Pole, 3, 3, 3);
+        string tmpLP;
+
         
         public NoGameNoLife()
         {
@@ -95,7 +98,6 @@ namespace TicTacToe
         {
             ImageButton btn = (ImageButton)sender;
 
-
             //btn.Source = ImageSource.FromFile("Images/x_player2.png");
             //btn.Source = ImageSource.FromFile("{local:ImageResource TicTacToe.Images.o_player.png}");
 
@@ -115,7 +117,8 @@ namespace TicTacToe
                 {
                     Pole[Rada - 1, Sloupec - 1] = "X";
                 }
-                
+
+                tmpLP = "X";
                 btn.IsEnabled = false;
                 Player1 = false;
                 Player2 = true;
@@ -137,9 +140,15 @@ namespace TicTacToe
                     Pole[Rada - 1, Sloupec - 1] = "O";
                    
                 }
+                tmpLP = "O";
                 btn.IsEnabled = false;
                 Player1 = true;
                 Player2 = false;
+            }
+            GE.gameField = Pole;
+            if (GE.CheckGameEnd(tmpLP))
+            {
+                Navigation.PushAsync(new EndOfSuffering(GE.lastPlayed) { });
             }
         }
         public void Board()
@@ -162,7 +171,7 @@ namespace TicTacToe
                 CountDown_P2.Stop();
                 CountDown_P1.Start();
                 CountSeconds_P1--;
-                System.Diagnostics.Debug.WriteLine(CountSeconds_P1_String);
+                //System.Diagnostics.Debug.WriteLine(CountSeconds_P1_String);
                 //Console.WriteLine(CountSeconds_P1);
                 //Console.WriteLine(CountSeconds_P2);
                 // Label_Timer1.Text = CountSeconds_P1.ToString();
@@ -172,7 +181,7 @@ namespace TicTacToe
                 CountDown_P1.Stop();
                 CountDown_P2.Start();
                 CountSeconds_P2--;
-                System.Diagnostics.Debug.WriteLine(CountSeconds_P2_String);
+                //System.Diagnostics.Debug.WriteLine(CountSeconds_P2_String);
                 //Console.WriteLine(CountSeconds_P1);
                 //Console.WriteLine(CountSeconds_P2);
                 //Label_Timer2.Text = CountSeconds_P2.ToString();
@@ -189,14 +198,13 @@ namespace TicTacToe
 
         async public void Surrender(object sender, EventArgs args)
         {
-            await Navigation.PushAsync(new EndOfSuffering { });
+            GE.lastPlayed = "D";
+            await Navigation.PushAsync(new EndOfSuffering(GE.lastPlayed) { });
         }
         async public void Pause(object sender, EventArgs args)
         {
             await Navigation.PushAsync(new NoGameNoLife2 { });
         }
-
-
     }
    
 }

@@ -12,18 +12,32 @@ namespace TicTacToe
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GameSettings : ContentPage
     {
-        Player PlayerId;
-        public GameSettings(Player TmpPlayer)
+        public GameSettings()
         {
             InitializeComponent();
-            PlayerId = TmpPlayer;
-
-            PlayerNick.Text = PlayerId.Nick;
-            System.Diagnostics.Debug.WriteLine(PlayerNick.WidthRequest);
         }
         async public void SetReady(object sender, EventArgs args)
         {
-            await Navigation.PushAsync(new NoGameNoLife());
+            if (GameTypeBool.IsToggled)
+            {
+                await Navigation.PushAsync(new NoGameNoLife());
+            }
+            else
+            {
+                await Navigation.PushAsync(new NoGameNoLife2());
+            }  
+        }
+
+        void OnToggledGameType(object sender, ToggledEventArgs e)
+        {
+            if (e.Value)
+            {
+                GameTypeText.Text = "On 3";
+            }
+            else
+            {
+                GameTypeText.Text = "On 5";
+            }
         }
     }
 }

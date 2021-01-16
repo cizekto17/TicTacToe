@@ -17,24 +17,15 @@ namespace TicTacToe
             InitializeComponent();
         }
 
-
-        // CHECK USER NICKNAME
-        // IF FALSE DISPLAY ALERT
-        // IF CORRECT PUSH LIST PAGE
+        // Enter game
         async public void EnterQue(object sender, EventArgs args)
         {
-            if (String.IsNullOrEmpty(EntryNick.Text))
-            {
-                await DisplayAlert("Nickname error", "Please set your nickname.", "exit");
-            }
-            else if (EntryNick.Text.Trim() != EntryNick.Text)
-            {
-                await DisplayAlert("Nickname error", "You can not use spaces in your nickname.", "exit");
-            }
-            else
-            {
-                await Navigation.PushAsync(new NickMenu());
-            }
+            await Navigation.PushAsync(new GameSettings());
+        }
+
+        async public void ExitGame(object sender, EventArgs args)
+        {
+            System.Diagnostics.Process.GetCurrentProcess().Kill();
         }
     }
 }
