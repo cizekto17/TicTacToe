@@ -17,6 +17,7 @@ namespace TicTacToe
             NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
             DetermineWinner(Winner);
+            
         }
 
         public void DetermineWinner(string Winner)

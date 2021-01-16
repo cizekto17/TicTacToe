@@ -23,6 +23,7 @@ namespace TicTacToe
         private int minutes1;
         private int seconds2;
         private int minutes2;
+        public int tahy = 90;
         public int CountSeconds_P1
         {
             get { return this._P1; }
@@ -76,8 +77,8 @@ namespace TicTacToe
                 CountDown_P2.Interval = 1000;
                 CountDown_P2.Elapsed += OnTimedEvent;
 
-                CountSeconds_P1 = 180;
-                CountSeconds_P2 = 180;
+                CountSeconds_P1 = 120;
+                CountSeconds_P2 = 120;
                 CountDown_P1.Start();
             }
             BindingContext = this;           
@@ -107,6 +108,7 @@ namespace TicTacToe
                 }
                 tmpLP = "X";
                 btn.IsEnabled = false;
+                tahy--;
                 Player1 = false;
                 Player2 = true;
             }
@@ -128,12 +130,15 @@ namespace TicTacToe
                 }
                 tmpLP = "O";
                 btn.IsEnabled = false;
+                tahy--;
                 Player1 = true;
                 Player2 = false;
             }
             GE.gameField = Pole;
             if (GE.CheckGameEnd(tmpLP))
             {
+                CountDown_P1.Stop();
+                CountDown_P2.Stop();
                 Navigation.PushAsync(new EndOfSuffering(GE.lastPlayed) { });
             }
         }
@@ -188,6 +193,14 @@ namespace TicTacToe
                     Game();
                 });
             }
+            else if (tahy == 0)
+            {
+                tahy--;
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    Draw();
+                });
+            }
         }
         async public void Game()
         {
@@ -199,6 +212,11 @@ namespace TicTacToe
             {
                 GE.lastPlayed = "O";
             }
+            await Navigation.PushAsync(new EndOfSuffering(GE.lastPlayed) { });
+        }
+        async public void Draw()
+        {
+            GE.lastPlayed = "D";
             await Navigation.PushAsync(new EndOfSuffering(GE.lastPlayed) { });
         }
         async public void Surrender(object sender, EventArgs args)

@@ -23,6 +23,7 @@ namespace TicTacToe
         private int minutes1;
         private int seconds2;
         private int minutes2;
+        public int tahy = 9;
         public int CountSeconds_P1
         {
             get { return this._P1; }
@@ -77,11 +78,13 @@ namespace TicTacToe
                 CountDown_P2.Interval = 1000;
                 CountDown_P2.Elapsed += OnTimedEvent;
 
-                CountSeconds_P1 = 180;
-                CountSeconds_P2 = 180;
+                CountSeconds_P1 = 8;
+                CountSeconds_P2 = 7;
                 CountDown_P1.Start();
             }
             BindingContext = this;
+
+            
             InitializeComponent();
         }               
         public void Button_Clicked(object sender, EventArgs args)
@@ -105,6 +108,7 @@ namespace TicTacToe
                 }
                 tmpLP = "X";
                 btn.IsEnabled = false;
+                tahy--;
                 Player1 = false;
                 Player2 = true;
             }
@@ -126,12 +130,15 @@ namespace TicTacToe
                 }
                 tmpLP = "O";
                 btn.IsEnabled = false;
+                tahy--;
                 Player1 = true;
                 Player2 = false;
             }
             GE.gameField = Pole;
             if (GE.CheckGameEnd(tmpLP))
             {
+                CountDown_P1.Stop();
+                CountDown_P2.Stop();
                 Navigation.PushAsync(new EndOfSuffering(GE.lastPlayed) { });
             }
         }
@@ -154,8 +161,8 @@ namespace TicTacToe
                 CountDown_P1.Start();
                 CountSeconds_P1--;
                 //System.Diagnostics.Debug.WriteLine(CountSeconds_P1_String);
-                //Console.WriteLine(CountSeconds_P1);
-                //Console.WriteLine(CountSeconds_P2);
+                Console.WriteLine(CountSeconds_P1);
+                Console.WriteLine(CountSeconds_P2);
                 // Label_Timer1.Text = CountSeconds_P1.ToString();
             }
             if (Player2)
@@ -164,26 +171,38 @@ namespace TicTacToe
                 CountDown_P2.Start();
                 CountSeconds_P2--;
                 //System.Diagnostics.Debug.WriteLine(CountSeconds_P2_String);
-                //Console.WriteLine(CountSeconds_P1);
-                //Console.WriteLine(CountSeconds_P2);
+                Console.WriteLine(CountSeconds_P1);
+                Console.WriteLine(CountSeconds_P2);
                 //Label_Timer2.Text = CountSeconds_P2.ToString();
             }
             if (CountSeconds_P1 == 0)
             {
                 CountDown_P1.Stop();
+                CountDown_P2.Stop();
                 GameTime1 = false;
+                
                 Device.BeginInvokeOnMainThread(() =>
                 {
                     Game();
                 });
             }
             else if (CountSeconds_P2 == 0)
-            {
+            {   
+                CountDown_P1.Stop();
                 CountDown_P2.Stop();
                 GameTime2 = false;
                 Device.BeginInvokeOnMainThread(() =>
                 {
                     Game();
+                });
+            }
+            else if (tahy == 0)
+            {
+                tahy--;
+
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    Draw();
                 });
             }
         }      
@@ -195,8 +214,16 @@ namespace TicTacToe
             }
             else if (GameTime2)
             {
+                
                 GE.lastPlayed = "O";
-            }            
+            }
+            
+            await Navigation.PushAsync(new EndOfSuffering(GE.lastPlayed) { });
+        }
+        async public void Draw()
+        {
+            GE.lastPlayed = "D";
+            
             await Navigation.PushAsync(new EndOfSuffering(GE.lastPlayed) { });
         }
         async public void Surrender(object sender, EventArgs args)
