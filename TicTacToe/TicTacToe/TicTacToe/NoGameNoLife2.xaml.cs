@@ -148,7 +148,7 @@ namespace TicTacToe
             GE.gameField = Pole;
             if (GE.CheckGameEnd(tmpLP))
             {
-                Navigation.PushAsync(new EndOfSuffering { });
+                Navigation.PushAsync(new EndOfSuffering(GE.lastPlayed) { });
             }
         }
         public void Board()
@@ -198,14 +198,12 @@ namespace TicTacToe
 
         async public void Surrender(object sender, EventArgs args)
         {
-            await Navigation.PushAsync(new EndOfSuffering { });
+            GE.lastPlayed = "D";
+            await Navigation.PushAsync(new EndOfSuffering(GE.lastPlayed) { });
         }
         async public void Pause(object sender, EventArgs args)
         {
             await Navigation.PushAsync(new NoGameNoLife2 { });
         }
-
-
     }
-
 }

@@ -8,35 +8,21 @@
             <Image RelativeLayout.WidthConstraint="80"
                    x:Name="PlayerIcon"
                    RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=80}"
-                   RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=10}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=30}"
                    Source="{local:ImageResource TicTacToe.Images.x_player.png}"/>
             <Label Text="Vs"
                    HorizontalOptions="CenterAndExpand"
                    FontSize="26"
                    TextColor="Black"
                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.33}"
-                   RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=30}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=50}"
                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.33}"
                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.33}"/>
             <Image RelativeLayout.WidthConstraint="80"
                    x:Name="OpponentIcon"
                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width, Constant=-160}"
-                   RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=10}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=30}"
                    Source="{local:ImageResource TicTacToe.Images.o_player.png}"/>
-            <Label Text="tIKUS"
-                   HorizontalTextAlignment="Center"
-                   x:Name="PlayerNick"
-                   WidthRequest="180"
-                   FontSize="26"
-                   RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=25}"
-                   RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=120}"/>
-            <Label Text="WWWWWWWWWW"
-                   x:Name="OpponentNick"
-                   HorizontalTextAlignment="Center"
-                   WidthRequest="180"
-                   FontSize="26"
-                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width, Constant=-205}"
-                   RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=120}"/>
             <BoxView HorizontalOptions="FillAndExpand" WidthRequest="1000" HeightRequest="1" Color="Black"
                      RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=180}"/>
 
@@ -53,24 +39,34 @@
                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.44}"
                    RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=245}">
             </Switch>
-            <Button TextColor="White" BackgroundColor="DeepSkyBlue" Text="Switch Sides"
-                    RelativeLayout.WidthConstraint="150"
-                    RelativeLayout.HeightConstraint="55"
-                    CornerRadius="10"
-                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.32}"
-                    RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=310}"/>
+            <Label Text="Game type" FontSize="26" FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.325}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=290}"
+                   RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.35}"
+                   RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.33}"/>
+            <Switch IsToggled="True"
+                    Scale="1.5"
+                    x:Name="GameTypeBool"
+                    Toggled="OnToggledGameType"
+                    ThumbColor="DeepSkyBlue"
+                    OnColor="#AEEAFF"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.44}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=335}">
+            </Switch>
+            <Label Text="On 3" FontSize="20"
+                   x:Name="GameTypeText"
+                   HorizontalOptions="Center"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.33}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=360}"
+                   RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.35}"
+                   RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.33}"/>
             <Button Clicked="SetReady" TextColor="White" BackgroundColor="DeepSkyBlue" Text="Start Game"
                     RelativeLayout.WidthConstraint="150"
                     RelativeLayout.HeightConstraint="55"
                     CornerRadius="10"
-                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.32}"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.30}"
                     RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=420}"/>
-            <Label Text="0/2 Ready"
-                   FontSize="Large"
-                   WidthRequest="150"
-                   HorizontalTextAlignment="Center"
-                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.32}"
-                   RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=500}"/>
         </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>

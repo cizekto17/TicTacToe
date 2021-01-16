@@ -11,7 +11,7 @@ namespace TicTacToe
         // DEFINE VARIABLES FOR CLASS GAME
         public string[,] gameField;
         private int winningCondition;
-        private string lastPlayed = "";
+        public string lastPlayed = "";
         private int rowCount;
         private int columnCount;
 

@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TicTacToe.MainPage">
-
     <StackLayout>
-        <Label Margin="0,60,0,0" FontSize="Title" Text="ブルートゥース○×ゲーム" HorizontalTextAlignment="Center"/>
-        <Entry x:Name="EntryNick" MaxLength="20" FontAttributes="Bold" Margin="55,60,55,0" HorizontalTextAlignment="Center" Placeholder="Enter Nick"></Entry>
-        <Button Clicked="EnterQue" FontAttributes="Bold" Text="Enter Game" TextColor="White" Margin="0,40,0,0" HeightRequest="60" WidthRequest="190" HorizontalOptions="Center" BackgroundColor="DeepSkyBlue"></Button>
+        
+        <Label Margin="0,100,0,0" Font="Bold,30"  Text="○×ゲーム" HorizontalTextAlignment="Center"/>
+        <Button Clicked="EnterQue" FontAttributes="Bold" Text="Enter Game" TextColor="White" Margin="0,210,0,0" HeightRequest="70" WidthRequest="190" HorizontalOptions="Center" BackgroundColor="DeepSkyBlue"></Button>
+        <Button Clicked="ExitGame" FontAttributes="Bold" Text="Exit" TextColor="White" Margin="0,10,0,0" HeightRequest="70" WidthRequest="190" HorizontalOptions="Center" BackgroundColor="Red"></Button>
     </StackLayout>
 </ContentPage>
