@@ -23,7 +23,7 @@ namespace TicTacToe
             await Navigation.PushAsync(new GameSettings());
         }
 
-        async public void ExitGame(object sender, EventArgs args)
+        public void ExitGame(object sender, EventArgs args)
         {
             System.Diagnostics.Process.GetCurrentProcess().Kill();
         }

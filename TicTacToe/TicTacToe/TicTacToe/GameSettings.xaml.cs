@@ -20,11 +20,11 @@ namespace TicTacToe
         {
             if (GameTypeBool.IsToggled)
             {
-                await Navigation.PushAsync(new NoGameNoLife());
+                await Navigation.PushAsync(new NoGameNoLife(Timer_Switch.IsToggled));
             }
             else
             {
-                await Navigation.PushAsync(new NoGameNoLife2());
+                await Navigation.PushAsync(new NoGameNoLife2(Timer_Switch.IsToggled));
             }  
         }
 
