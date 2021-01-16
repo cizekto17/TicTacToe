@@ -48,7 +48,7 @@
 
             <ImageButton Source="" Grid.Column="0" Grid.Row="1" Clicked="Button_Clicked"/>
             <ImageButton Source="" Grid.Column="1" Grid.Row="1" Clicked="Button_Clicked"/>
-            <ImageButton Source="" Grid.Column="2" Grid.Row="1" Clicked="Button_Clicked" />
+            <ImageButton Source="" Grid.Column="2" Grid.Row="1" Clicked="Button_Clicked"/>
             <ImageButton Source="" Grid.Column="3" Grid.Row="1" Clicked="Button_Clicked"/>
             <ImageButton Source="" Grid.Column="4" Grid.Row="1" Clicked="Button_Clicked"/>
             <ImageButton Source="" Grid.Column="5" Grid.Row="1" Clicked="Button_Clicked"/>

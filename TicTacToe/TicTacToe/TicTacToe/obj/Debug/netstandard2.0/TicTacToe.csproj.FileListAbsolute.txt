@@ -54,3 +54,4 @@ C:\Users\tomas\VisualStudioProjects\TicTacToe\TicTacToe\TicTacToe\TicTacToe\bin\
 C:\Users\tomas\VisualStudioProjects\TicTacToe\TicTacToe\TicTacToe\TicTacToe\bin\Debug\netstandard2.0\ref\TicTacToe.dll
 C:\Users\tomas\VisualStudioProjects\TicTacToe\TicTacToe\TicTacToe\TicTacToe\bin\Debug\netstandard2.0\TicTacToe.pdb
 C:\Users\tomas\VisualStudioProjects\TicTacToe\TicTacToe\TicTacToe\TicTacToe\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\tobik\source\repos\Piskvorky\TicTacToe\TicTacToe\TicTacToe\TicTacToe\obj\Debug\netstandard2.0\NoGameNoLife2.xaml.g.cs
