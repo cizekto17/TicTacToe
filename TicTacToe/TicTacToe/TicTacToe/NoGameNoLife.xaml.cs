@@ -78,8 +78,8 @@ namespace TicTacToe
                 CountDown_P2.Interval = 1000;
                 CountDown_P2.Elapsed += OnTimedEvent;
 
-                CountSeconds_P1 = 8;
-                CountSeconds_P2 = 7;
+                CountSeconds_P1 = 30;
+                CountSeconds_P2 = 29;
                 CountDown_P1.Start();
             }
             BindingContext = this;
